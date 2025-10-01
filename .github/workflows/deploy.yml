@@ -35,7 +35,7 @@ jobs:
           host: ${{ secrets.HOST }}                 # IP du VPS
           username: ${{ secrets.USER }}             # utilisateur du VPS
           key: ${{ secrets.SSH_PRIVATE_KEY }}      # clé privée SSH
-          port: 22
+          port: 22034
           source: "dist/*"                          # fichiers à envoyer
           target: "/var/www/authentification/pb_public" # dossier de destination sur le VPS
           strip_components: 1
